@@ -13,16 +13,16 @@ func main() {
 		wordRune := []rune(word)
 		wordMap := make(map[rune]bool)
 
-		for i := 0; i < len(wordRune); i++ {
-			wordMap[wordRune[i]] = false
-		}
+		//for i := 0; i < len(wordRune); i++ {
+		//	wordMap[wordRune[i]] = false
+		//}
 
 		// for the new input
 		var input string
 		var finalWord string
 
 		for {
-                        fmt.Println("put a letter: ")
+			fmt.Println("put a letter: ")
 			fmt.Scanln(&input)
 
 			inputRune := []rune(input)
@@ -51,4 +51,3 @@ func main() {
 		}
 	}
 }
-
